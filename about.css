@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    background-color:rgb(0, 87, 19);
+    opacity: 0.75;
+    overflow: hidden;
+    padding-left: 20%;
+   
+    
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+  
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 250px;
+    
+  }
+  
+  .menu-icon {
+    display: none;
+    float: right;
+    font-size: 30px;
+    color: white;
+    padding: 14px 20px;
+    user-select: none; /* Prevent text selection */
+    cursor: pointer; /* Set cursor style to pointer */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+      margin-left: 0;   z-index: 1;
+    }
+  
+    .nav-links li, .nav-links a {
+      float: none;
+      display: block;
+      text-align: center;  
+    }
+  
+    .menu-icon {
+      display: block;
+      
+    }
+  
+  }
+
+header {
+    background-image: url('about2.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:150px;
+    color: #fc4525;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+footer {
+    background-color:rgb(0, 87, 19);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.mission-content p {
+    margin-bottom: 20px;
+}
+
+.mission-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.mission-images img {
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.story-content {
+    text-align: justify;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.story-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.story-images img {
+    width: 30%;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+.team-member1 {
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.member-info {
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.design-philosophy {
+    background-color: #eaf8e0; /* Light green background for a touch of nature */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    animation: fadeInUp 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.design-philosophy p {
+    color: #2d472c; /* Dark green color for text, symbolizing lush vegetation */
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Add this keyframe if it doesn't exist already */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Enhance the Testimonials Container */
+
+
+/* Adding a subtle entrance animation for testimonials */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .portfolio-item {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Adjusts image positioning */
+    overflow: hidden; /* Keeps the layout neat */
+  }
+  
+  .portfolio-image {
+    width: 50%; /* Adjust this to control image size */
+    height: 20%;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .portfolio-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+  }
+  
+  .portfolio-description {
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 100%; /* Ensures the description uses the full width available */
+  }
+  
+  .portfolio-description h3, .portfolio-description p {
+    text-align: center; /* Centers the text for a neater appearance */
+  }
+  
+  .portfolio-description h3 {
+    margin-top: 0;
+  }
+  
+  .portfolio-description p {
+    text-align: justify;
+    margin-bottom: 0;
+  }
+  .community-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .community-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Animate the community content */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Default styles */
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .nav-links {
+        margin-left: 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Add more specific styles for smaller screens as needed */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- Expense Tracker Content (Your existing content) -->
+    <div id="dailyLimit" class="daily-limit"></div>
+    <div id="notification" class="notification"></div>
+    <div id="remainingMoney" class="remaining-money"></div>
+    <div id="dayCount" class="day-count"></div>
+    <div id="expenseInput" class="expense-input" style="display: none;">
+      <label for="dailyExpense">Enter today's expense:</label>
+      <input type="number" id="dailyExpense" placeholder="Enter daily expense">
+      <button id="addExpenseButton">Add Expense</button>
+    </div>
+    <div id="savingsInput" class="expense-input" style="display: none;">
+      <label for="savingsGoal">Set your savings goal:</label>
+      <input type="number" id="savingsGoal" placeholder="Enter savings goal">
+      <button id="setSavingButton">Set Savings Goal</button>
+    </div>
+    <div id="savingsInfo" class="savings-info" style="display: none;">
+      <h2>Savings Information</h2>
+      <div id="savingsTotal" class="savings-total"></div>
+      <div id="savingsNotification" class="savings-notification"></div>
+      <div class="progress-bar">
+        <div id="savingsProgress" class="progress"></div>
+      </div>
+      <button id="addSavingButton">Add to Savings</button>
+    </div>
+    <div id="expenseHistory" class="expense-history" style="display: none;">
+      <h2>Expense History</h2>
+      <ul id="expenseList" class="expense-list"></ul>
+    </div>
+    <button id="resetButton" style="display: none;">Reset</button>
+    <div id="licSchemes" class="schemes" style="display: none;">
+      <h2>LIC SCHEMES TO INVEST</h2>
+      <ul id="licSchemesList" class="schemes-list"></ul>
+        
+    </div>
+    <div id="mutualFundSchemes" class="schemes" style="display: none;">
+      <h2>MUTUAL FUND SCHEMES TO INVEST</h2>
+      <ul id="mutualFundSchemesList" class="schemes-list"></ul>
+      <!-- Add this button to toggle the stock information section -->
+    <button id="showStockInfoButton">Show Stock Information</button>
+    </div>
+  </div>
+
+
+<!-- Stock information section (hidden by default) -->
+<div id="stockInfo" class="schemes" style="display: none;">
+  <h2>Stock Information</h2>
+  <div>
+    <label for="stockSymbol">Select a stock symbol:</label>
+    <select id="stockSymbol">
+      <option value="AAPL">Apple Inc. (AAPL)</option>
+      <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+      <option value="MSFT">Microsoft Corporation (MSFT)</option>
+      <!-- Add more stock symbols as needed -->
+    </select>
+    <button id="fetchStockButton">Fetch Stock Data</button>
+  </div>
+  <div id="stockData"></div>
+  <div id="stockBuyLinks" style="display: none;">
+    <h3>Buy Stocks:</h3>
+    <ul>
+      <li><a href="https://finance.yahoo.com/quote/AAPL/">Buy Apple Inc. (AAPL)</a></li>
+      <li><a href="https://finance.yahoo.com/quote/GOOG/">Buy Alphabet Inc. (GOOGL)</a></li>
+      <li><a href="https://finance.yahoo.com/quote/MSFT/">Buy Microsoft Corporation (MSFT)</a></li>
+      <!-- Add more stock buy links as needed -->
+    </ul>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

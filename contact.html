@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="menu-icon">&#9776;</span> <!-- Menu Icon -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Investment</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h2>Contact Info</h2>
+                <p>Mobile No: 123-456-7890</p>
+            </div>
+            <div class="contact-item">
+                <h2>Instagram</h2>
+                <p>@pocketfriendly</p>
+            </div>
+            <div class="contact-item">
+                <h2>Gmail</h2>
+                <p>pocketfriendly@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Form for Special Requests -->
+        <h2>Special Requests</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="request">Special Request:</label>
+            <textarea id="request" name="request" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Form for Service Reviews -->
+        <h2>Service Reviews</h2>
+        <form action="#" method="POST" class="contact-form">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
